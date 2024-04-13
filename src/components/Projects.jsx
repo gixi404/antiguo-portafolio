@@ -19,6 +19,17 @@ function Projects() {
         "alojamiento de videos en bunny, autenticación de usuarios con Auth0, compras integradas con Stripe.",
     },
     {
+      id: 1,
+      name: "Lymbrarie",
+      image:
+        "https://res.cloudinary.com/dgs55s8qh/image/upload/v1713051131/qu3dvs276bkret9sojfu.png",
+      link: "https://lymbrarie.vercel.app",
+      description:
+        "Permite al usuario llevar un registro de su propia colección de libros con clasificación, búsqueda y seguimiento de sus lecturas.",
+      features:
+        "base de datos gestionanda en Firebase, notas para cada libro, estadística de lectura.",
+    },
+    {
       id: 2,
       name: "lym CLI",
       image: cli,
@@ -128,19 +139,6 @@ function Projects() {
             </div>
           </li>
         ))}
-        <li class="hidden lg:flex w-full max-w-[450px] h-[540px] bg-[#00000066] border border-slate-800 overflow-hidden rounded-2xl backdrop-blur-sm flex-col items-center justify-start gap-y-5 font-lato">
-          <p class="border-t-2 border-[#1df2dd4d] absolute z-10 bottom-0 left-0 text-md sm:text-lg text-white bg-gray-900 text-center p-2">
-            Este proyecto está en construcción. Y para no romper la simetría,
-            dejo un astronauta saludando
-          </p>
-          <video
-            autoplay
-            loop
-            loading="lazy"
-            class="w-full h-full object-cover object-top rounded-2xl opacity-95"
-            src={spaceVideo}
-          ></video>
-        </li>
       </ul>
     </section>
   );
